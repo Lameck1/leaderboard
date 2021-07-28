@@ -2,7 +2,7 @@ import 'regenerator-runtime/runtime.js';
 import getElement from './helpers/getElement.js';
 import showScores from './helpers/showScores.js';
 
-const API_KEY = 'hGgv9MCCAVToMVm7R67v';
+const API_KEY = 'DIAeW3Nidoxu0sA7rluj';
 const URI = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${API_KEY}/scores`;
 
 export const postScores = async (user, score) => {
@@ -19,7 +19,7 @@ export const postScores = async (user, score) => {
   };
 
   await fetch(URI, requestOptions)
-    .then((response) => response.text())
+    .then((response) => response.json())
     .then((result) => result)
     .catch((error) => error);
 };
