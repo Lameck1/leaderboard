@@ -10,7 +10,7 @@ export default () => {
     const user = event.target[0].value;
     const score = event.target[1].value;
     postScores(user, score);
-    getScores();
+    setTimeout(() => { getScores(); }, 3000);
     form.reset();
   });
 

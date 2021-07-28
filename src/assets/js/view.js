@@ -16,7 +16,7 @@ export default () => {
   scoresDivHeader.append(scoresDivHeading, refreshBtn);
   scoresDiv.append(scoresDivHeader, scoreList);
 
-  const formDiv = createElement('div', { class: 'form-div' });
+  const formDiv = createElement('div', { class: 'form-div d-flex' });
   const formHeading = createElement('h3', { class: 'full-width' }, 'Add your score');
   const form = createElement('form', { class: 'd-flex submit-score' });
   const nameInput = createElement('input', {
@@ -30,5 +30,5 @@ export default () => {
   formDiv.append(formHeading, form);
 
   main.append(scoresDiv, formDiv);
-  document.body.append(header, main);
+  document.body.prepend(header, main);
 };
