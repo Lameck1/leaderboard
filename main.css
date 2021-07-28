@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Tomorrow:wght@300&display=swap);
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -136,7 +136,8 @@ table {
 }
 
 body {
-  font-family: 'Cormorant Upright', serif;
+  font-family: 'Tomorrow', sans-serif;
+  background-color: #eee;
 }
 
 h1 {
@@ -151,6 +152,11 @@ h3 {
   padding: 5px 0;
 }
 
+.scroll {
+  height: 40vh;
+  overflow: scroll;
+}
+
 .full-width {
   width: 100%;
 }
@@ -162,25 +168,25 @@ h3 {
 .header {
   align-items: center;
   height: 15vh;
+  border-bottom: 2px solid #988dae;
 }
 
 .header,
-.main {
-  width: 70vw;
+.main,
+footer {
+  width: 60vw;
   margin: 0 auto;
+  background-color: #f7f3ff;
 }
 
 .main {
-  min-height: 85vw;
-}
-
-.scores-div {
-  width: 50%;
+  min-height: 78vh;
 }
 
 .scores-div,
 .form-div {
   padding: 20px;
+  width: 50%;
 }
 
 .scores-div-header {
@@ -188,34 +194,66 @@ h3 {
 }
 
 .score-list {
-  border: 2px solid;
+  border: 2px solid #988dae;
+  background-color: #ede7f6;
   margin-top: 1em;
+  min-height: 15vh;
 }
 
 .score-list,
+.form-div,
 form {
   flex-direction: column;
 }
 
+.form-div {
+  align-items: flex-start;
+}
+
 form {
   align-items: flex-end;
-  margin-top: 1em;
+  margin-top: 0.6em;
 }
 
 .score-list li {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 5px;
 }
 
 .score-list li:nth-child(even) {
-  background-color: #eee;
+  background-color: #fff;
 }
 
 input {
   padding: 5px;
   font-size: 1.2rem;
   margin: 5px 0;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #808080;
+}
+
+button,
+input[type=submit] {
+  background-color: #988dae;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 3px 3px #808080;
+}
+
+button:hover,
+input[type=submit]:hover {
+  background-color: #f7f3ff;
+  box-shadow: 1.5px 1.5px #808080;
+}
+
+footer {
+  border-top: 1px solid #988dae;
+  padding: 15px 0;
+  text-align: center;
 }
 
 
