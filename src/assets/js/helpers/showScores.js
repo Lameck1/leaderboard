@@ -15,6 +15,6 @@ export default (data, scoreList) => {
   });
 
   if (scores.length > 10) {
-    scoreList.classList.add('scroll-board');
+    scoreList.classList.add('scroll');
   }
 };
