@@ -13,7 +13,9 @@
 
 This is a mini leaderboard app. This app app has been built using webpack as a module bundler and also ES6 features.
 
-<!-- ![screenshot]() -->
+This leaderboard app stores scores submitted by players and all the apps data is store at the [Leaderboard API service](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
+
+![screenshot](./src/assets/images/screenshot.png)
 
 ## [Live Demo](https://lameck1.github.io/leaderboard/)
 
@@ -23,6 +25,7 @@ This is a mini leaderboard app. This app app has been built using webpack as a m
 * CSS
 * Javascript
 * Webpack
+* [Leaderboard API service](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 
 ## Getting Started
 
