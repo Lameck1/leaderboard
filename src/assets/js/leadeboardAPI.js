@@ -33,6 +33,6 @@ export const getScores = async () => {
 
   await fetch(URI, requestOptions)
     .then((response) => response.json())
-    .then((result) => showScores(result, scoreList))
+    .then(({ result }) => showScores(result, scoreList))
     .catch((error) => error);
 };
